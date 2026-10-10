@@ -10,7 +10,7 @@ This entry records repository setup, not a website release.
 
 ## 2026-10-10 — Application source import
 
-- Imported the complete owner-provided website project into the private application repository, including frontend, Cloudflare Worker, database migrations and source assets.
+- Imported the complete website project into the private application repository, including frontend, Cloudflare Worker, database migrations and source assets.
 - Added a dependency lockfile and excluded generated assets and local secret files from version control.
 - Updated development documentation to reflect the imported implementation.
 - Production build, TypeScript checks and Worker syntax checks passed.
