@@ -5,7 +5,7 @@ Updated: 2026-10-10
 ## Completed
 
 - [x] Create a private application repository and a public development repository.
-- [x] Connect GitHub to the development assistant and verify repository access.
+- [x] Configure GitHub access and verify repository permissions.
 
 ## Next
 
