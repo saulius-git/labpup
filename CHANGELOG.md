@@ -14,7 +14,6 @@
 - Confirmed the first deployment and successful website opening.
 - Renamed the primary trading action to “Trade on pump.fun”.
 - Added a public GitHub repository link in the website footer.
-- Added a secondary DEX Screener trading link, then removed it at the project’s request later the same day.
 - Simplified public repository wording to focus on completed development work.
 - Production build and TypeScript checks passed for the website navigation changes. Cloudflare reported successful deployments.
 
