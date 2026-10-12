@@ -1,5 +1,13 @@
 # Development updates
 
+## 2026-10-12 — USD and SOL chart views
+
+- Added a USD / SOL selector to the price chart, updating its heading, displayed price, axis labels and tooltips.
+- Started recording native SOL prices for the selected SOL-quoted trading pair, with independent update times and stale-data handling.
+- Preserved existing USD history. SOL history begins with this deployment; older USD observations are not converted using a current exchange rate.
+- Production build, TypeScript checks and 11 targeted market and chart tests passed, including real SQLite coverage of history storage and timestamp joins.
+- Cloudflare reported a successful production deployment.
+
 ## 2026-10-11 — Chart continuity and token links
 
 - Improved chart continuity for sparse price and supply readings: nearby observations use solid lines; longer gaps use dashed connections between recorded observations.
