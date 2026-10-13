@@ -1,5 +1,13 @@
 # Development updates
 
+## 2026-10-13 — Shared currency selector
+
+- Moved the LABPUP / SOL and LABPUP / USD selector above the token metrics and removed the duplicate chart control.
+- Applied the selected currency to the price, total-supply valuation, trading volume, chart and Buy & Burn monetary display units.
+- Kept token quantities and percentage allocations unchanged. Unconnected fee accounting remains unavailable; the historical creator purchase remains stated in its original SOL amount.
+- Switching currency uses already loaded data and does not add API requests.
+- Production build and TypeScript checks passed. Cloudflare reported a successful production deployment.
+
 ## 2026-10-13 — Ten-minute refresh and database optimization
 
 - Changed scheduled collection and browser polling to a ten-minute interval.
