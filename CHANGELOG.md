@@ -1,5 +1,15 @@
 # Development updates
 
+## 2026-10-13 — Ten-minute refresh and database optimization
+
+- Changed scheduled collection and browser polling to a ten-minute interval.
+- Shared a ten-minute collection window across cron and page-triggered refreshes; increased API edge caching to five minutes.
+- Adjusted freshness checks to the slower collection cadence.
+- Reduced retention cleanup to once per day and scoped deletions by token and timestamp.
+- Added indexes for latest valid price and supply readings, scanned signatures and latest trades. Database initialization is reused within each Worker instance.
+- Production build, TypeScript and Worker syntax checks passed. All 21 targeted tests passed, including daily cleanup and indexed price lookup.
+- Cloudflare reported a successful production deployment.
+
 ## 2026-10-13 — Refresh recovery
 
 - Added background market and trade refreshes from page requests when collection or 24-hour trade synchronization is overdue.
