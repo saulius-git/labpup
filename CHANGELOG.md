@@ -1,5 +1,15 @@
 # Development updates
 
+## 2026-10-13 — On-chain SOL pricing and trade history
+
+- Made LABPUP / SOL the default chart view and price metric, retaining the USD option.
+- Added direct Solana RPC reads of the verified pump.fun bonding-curve account for SOL pricing before migration.
+- Added bounded, retryable recovery of actual pump.fun trade events, including exact timestamps, post-trade prices and transaction links. Fee sweeps and failed transactions are excluded.
+- Separated authoritative on-chain SOL history from older index-derived observations. USD prices and trading-volume data continue to use the existing index source.
+- Added a refresh when recorded market data is overdue, and improved chart time labels and trade tooltips.
+- Production build, TypeScript and Worker syntax checks passed. All 14 targeted market, chart and on-chain tests passed, including an actual LABPUP buy fixture and SQLite tests with an unavailable DEX index.
+- Cloudflare reported a successful production deployment. Live browser verification was unavailable.
+
 ## 2026-10-12 — USD and SOL chart views
 
 - Added a USD / SOL selector to the price chart, updating its heading, displayed price, axis labels and tooltips.
