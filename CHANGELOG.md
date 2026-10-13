@@ -1,5 +1,16 @@
 # Development updates
 
+## 2026-10-13 — On-chain USD conversion
+
+- Replaced DEX Screener market collection with direct Solana RPC reads. No DEX Screener requests remain in the application.
+- Read the LABPUP bonding curve and a verified Raydium SOL/USDC pool together in one RPC snapshot; derive the USD estimate from their prices, treating 1 USDC as approximately 1 USD.
+- Kept ten-minute collection and browser polling. The conversion adds an account to an existing RPC read rather than an additional upstream request.
+- Recorded the contemporaneous conversion rate and USD price without rewriting earlier USD history. USD trading volume uses the latest fresh on-chain conversion rate.
+- Validated the pool program, account discriminator, exact token mints, decimals, active liquidity and swap status. An unavailable USDC rate does not suppress valid SOL or supply readings.
+- The current LABPUP price reader supports its pump.fun bonding curve before migration. A future migration requires support for the destination trading pool.
+- Production build, TypeScript and Worker syntax checks passed. All 21 targeted tests passed. A live Solana RPC snapshot confirmed that both account parsers and the conversion work.
+- Cloudflare reported a successful production deployment. Direct production API inspection remains unavailable to the verification client.
+
 ## 2026-10-13 — Shared currency selector
 
 - Moved the LABPUP / SOL and LABPUP / USD selector above the token metrics and removed the duplicate chart control.
