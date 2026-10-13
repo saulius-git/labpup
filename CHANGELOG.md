@@ -1,5 +1,13 @@
 # Development updates
 
+## 2026-10-13 — Refresh recovery
+
+- Added background market and trade refreshes from page requests when collection or 24-hour trade synchronization is overdue.
+- Shared a database lease between scheduled and page-triggered collection to prevent concurrent scans and excessive retries.
+- Reduced the browser polling interval to 30 seconds and API edge-cache lifetime to 15 seconds.
+- Production build, TypeScript and Worker syntax checks passed. All 20 targeted tests passed, including stale trade recovery with fresh price samples and concurrent collection.
+- Cloudflare reported a successful production deployment. Live API inspection remains blocked for the verification client, so the production cause of the reported delay has not been independently confirmed.
+
 ## 2026-10-13 — Trading-volume correction
 
 - Replaced the indexed 24-hour volume with the sum of verified pump.fun buy and sell amounts in the rolling 24-hour window.
