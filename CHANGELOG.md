@@ -1,5 +1,14 @@
 # Development updates
 
+## 2026-10-13 — Trading-volume correction
+
+- Replaced the indexed 24-hour volume with the sum of verified pump.fun buy and sell amounts in the rolling 24-hour window.
+- Excluded failed transactions, fee sweeps and out-of-window events; repeated scans do not duplicate volume.
+- Added synchronization coverage and freshness checks. An incomplete or stale scan displays a syncing state rather than a misleading partial total.
+- Displayed volume in SOL by default. The USD view is explicitly an estimate using the latest available SOL/USD conversion rate.
+- Production build, TypeScript and Worker syntax checks passed. All 18 targeted tests passed, including real LABPUP buy/sell fixtures, retry behavior and rolling-window boundaries.
+- Cloudflare reported a successful production deployment.
+
 ## 2026-10-13 — On-chain SOL pricing and trade history
 
 - Made LABPUP / SOL the default chart view and price metric, retaining the USD option.
