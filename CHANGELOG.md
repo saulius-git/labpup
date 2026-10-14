@@ -1,5 +1,15 @@
 # Development updates
 
+## 2026-10-14 — Trading volume follows the chart period
+
+- Linked trading-volume amount, currency, label and buy/sell counts to the selected 24H, 7D, 30D or ALL chart period.
+- Added independent completeness checks for seven-day, thirty-day and available-history totals. Missing older transactions suppress only the affected period totals; verified zero volume remains zero.
+- ALL displays a “Since” date and sums the verified available interval, within the existing ninety-day retention. It does not claim lifetime trading volume.
+- Expanded the bounded signature listing to at most 1,000 records per existing RPC request. Transaction recovery remains capped at four unscanned records per ten-minute collection; intervals older than the returned boundary are not certified.
+- Kept SOL as the default and USD conversion as an estimate via the latest fresh on-chain SOL/USDC rate.
+- Production build, TypeScript and Worker syntax checks passed. All 25 targeted tests passed, including period boundaries, missing older records, stale coverage, available-history dates and duplicate prevention.
+- Cloudflare reported a successful production deployment. Direct production API inspection remains unavailable to the verification client.
+
 ## 2026-10-14 — Trading volume recovery for version-1 transactions
 
 - Enabled version-1 Solana transaction responses alongside legacy and version-0 transactions.
