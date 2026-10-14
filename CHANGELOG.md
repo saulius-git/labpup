@@ -1,5 +1,14 @@
 # Development updates
 
+## 2026-10-14 — Trading volume recovery for version-1 transactions
+
+- Enabled version-1 Solana transaction responses alongside legacy and version-0 transactions.
+- Confirmed that the latest LABPUP buy was rejected by the previous version-0-only RPC request. This kept the rolling 24-hour trade scan incomplete and hid its total.
+- Added a regression fixture from that actual version-1 buy and verified mixed-version buy/sell totals, USD conversion and duplicate prevention.
+- Kept the ten-minute refresh interval and existing completeness checks.
+- Production build, TypeScript and Worker syntax checks passed. All 22 targeted tests passed.
+- Cloudflare reported a successful production deployment. The rejected transaction was successfully retrieved through live Solana RPC; direct production API inspection remains blocked for the verification client.
+
 ## 2026-10-13 — On-chain USD conversion
 
 - Replaced DEX Screener market collection with direct Solana RPC reads. No DEX Screener requests remain in the application.
