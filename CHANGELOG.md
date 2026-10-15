@@ -1,5 +1,14 @@
 # Development updates
 
+## 2026-10-15 — Launch date and elapsed token age
+
+- Replaced the visible “Display currency” label with the verified LABPUP launch date, 9 October 2026, and completed years, months and days since launch.
+- Based the counter on the pump.fun CreateV2 transaction timestamp, 2026-10-09 11:58:32 UTC.
+- Preserved the SOL/USD selector beside the launch information and adapted the row for smaller screens.
+- Updated the age locally once per minute without extra API requests, including calendar-month, leap-year and anniversary handling.
+- Production build and TypeScript checks passed. All 28 targeted tests passed, including launch-time boundaries and calendar arithmetic.
+- Cloudflare reported a successful production deployment. Live visual inspection was unavailable.
+
 ## 2026-10-14 — Trading volume follows the chart period
 
 - Linked trading-volume amount, currency, label and buy/sell counts to the selected 24H, 7D, 30D or ALL chart period.
