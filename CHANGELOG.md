@@ -1,5 +1,15 @@
 # Development updates
 
+## 2026-10-15 — Technical SEO and refreshed project introduction
+
+- Published the approved LABPUP introduction and the search title “LABPUP | Solana Meme Coin, Price & Tokenomics”, retaining the project slogan.
+- Added a canonical URL, search description, Open Graph and Twitter card metadata, robots.txt and a single-page sitemap.
+- Prerendered the public dashboard content into the initial HTML so the introduction, tokenomics and project story are available without executing JavaScript.
+- Replaced obsolete pre-launch and market-connection notices in default and known saved copy while preserving custom content edits. Unverified burn and fee-accounting amounts remain unavailable.
+- Excluded administration pages from indexing.
+- Production build and TypeScript checks passed. All 31 targeted tests passed, including initial HTML, metadata and saved-copy handling. The full integration runner could not start because of a local Wrangler environment error.
+- Cloudflare reported a successful production deployment. Direct verification of the updated public content was limited by access protection; search-engine recrawling and indexing remain to be verified.
+
 ## 2026-10-15 — Launch date and elapsed token age
 
 - Replaced the visible “Display currency” label with the verified LABPUP launch date, 9 October 2026, and completed years, months and days since launch.
