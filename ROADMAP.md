@@ -1,6 +1,6 @@
 # Development roadmap
 
-Updated: 2026-10-11
+Updated: 2026-10-15
 
 ## Completed
 
@@ -12,10 +12,14 @@ Updated: 2026-10-11
 - [x] Add public GitHub and Rugcheck links to the website.
 - [x] Improve chart continuity across sparse readings and add regression tests.
 
+- [x] Add approved LABPUP/Solana introduction, search and social metadata, canonical URL, sitemap and crawler-readable initial content.
+- [x] Replace obsolete launch and market-connection copy while preserving custom content edits.
+
 ## Next
 
 - [ ] Verify chart behavior and token supply handling with live production data.
-- [ ] Review public-facing text and mobile layout.
+- [ ] Verify the updated mobile layout visually.
+- [ ] Verify Google Search Console ownership and inspect indexing, search queries and clicks.
 - [ ] Connect creator-fee accounting and publish verified Buy & Burn records.
 
 Public development updates will accompany completed website changes.
