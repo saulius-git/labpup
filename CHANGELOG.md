@@ -1,5 +1,15 @@
 # Development updates
 
+## 2026-10-18 — Private traffic analytics
+
+- Added a signed-in administration report with visits and page views for the last seven calendar days in Europe/Vilnius, including the current partial day.
+- Added the top 20 referral and UTM sources with visit counts and shares; direct or unknown visits are listed separately.
+- Started new traffic collection with one event per public page load, duplicate prevention, basic bot exclusions and browser privacy preferences. Earlier dates remain unavailable.
+- Visits are tab-local sessions with a thirty-minute inactivity limit, not unique visitors. No IP addresses, persistent visitor IDs or full referrer URLs are stored.
+- Cached authenticated report data internally for up to ten minutes. Kept market refresh intervals unchanged; daily maintenance retains aggregate traffic for ninety days and deduplication IDs for two days.
+- Production build, TypeScript and Worker syntax checks passed. All 41 relevant tests passed, including Worker/D1 authentication, deduplication, Vilnius date boundaries, top-20 ranking and fresh-database initialization. Local Worker tests used a test-only network-interface shim for the execution environment.
+- Cloudflare reported a successful production deployment. Live visual inspection was unavailable.
+
 ## 2026-10-15 — Technical SEO and refreshed project introduction
 
 - Published the approved LABPUP introduction and the search title “LABPUP | Solana Meme Coin, Price & Tokenomics”, retaining the project slogan.
