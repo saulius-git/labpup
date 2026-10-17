@@ -1,8 +1,10 @@
 # Development roadmap
 
-Updated: 2026-10-15
+Updated: 2026-10-18
 
 ## Completed
+
+- [x] Add private weekly visits and page-view analytics with top 20 referral/UTM sources.
 
 - [x] Create a private application repository and a public development repository.
 - [x] Configure GitHub access and verify repository permissions.
