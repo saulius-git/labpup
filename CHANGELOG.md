@@ -1,5 +1,15 @@
 # Development updates
 
+## 2026-10-23 — Creator token lock
+
+- Added a rectangular Creator token lock section after Tokenomics and before Buy & Burn, with a responsive mobile layout.
+- Displayed the verified 25,000,000 LABPUP allocation, approximately 50% of creator holdings at lock creation, separately from protocol fees and total token supply.
+- Added the 23 April 2027, 07:00 UTC / 10:00 Vilnius unlock date, a local countdown, Streamflow proof and public contract details.
+- Added strict verification of the Streamflow contract, token escrow, recipient, mint, amount, schedule and cancellation/transfer flags to the existing ten-minute Solana collection without extra upstream RPC requests.
+- Added explicit pending, stale, claimable and withdrawn states so unavailable verification does not appear as a confirmed lock.
+- Production build and TypeScript checks passed. All 46 tests passed, including Worker/D1 collection, contract validation, stale readings and unlock boundaries. Local Worker tests used a test-only network-interface shim.
+- Cloudflare reported a successful production deployment. Confirmed the new section and placement on the live site; mobile layout was inspected in the local preview.
+
 ## 2026-10-18 — Private traffic analytics
 
 - Added a signed-in administration report with visits and page views for the last seven calendar days in Europe/Vilnius, including the current partial day.
