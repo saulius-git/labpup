@@ -1,8 +1,10 @@
 # Development roadmap
 
-Updated: 2026-10-18
+Updated: 2026-10-23
 
 ## Completed
+
+- [x] Add creator token lock information with Streamflow proof, unlock countdown and ten-minute on-chain verification.
 
 - [x] Add private weekly visits and page-view analytics with top 20 referral/UTM sources.
 
