@@ -8,7 +8,7 @@
 - Added strict verification of the Streamflow contract, token escrow, recipient, mint, amount, schedule and cancellation/transfer flags to the existing ten-minute Solana collection without extra upstream RPC requests.
 - Added explicit pending, stale, claimable and withdrawn states so unavailable verification does not appear as a confirmed lock.
 - Production build and TypeScript checks passed. All 46 tests passed, including Worker/D1 collection, contract validation, stale readings and unlock boundaries. Local Worker tests used a test-only network-interface shim.
-- Cloudflare reported a successful production deployment. Confirmed the new section and placement on the live site; mobile layout was inspected in the local preview.
+- Cloudflare reported a successful production deployment. Confirmed the new section and placement on the live site, plus a fresh verified lock reading with zero withdrawals at 09:40 UTC. Mobile layout was inspected in the local preview.
 
 ## 2026-10-18 — Private traffic analytics
 
