@@ -1,5 +1,11 @@
 # Development updates
 
+## 2026-10-23 — Token lock FAQ
+
+- Added “What does locked mean?” to the public FAQ, explaining the 25,000,000 LABPUP creator lock, approximately 50% of holdings at creation, unlock date, disabled early cancellation and transfer, and full claim at expiry.
+- Clarified that the creator token lock is separate from liquidity locking and burning, and linked the Streamflow proof.
+- Production build, TypeScript and prerendered-content checks passed. Cloudflare reported a successful deployment; confirmed the new FAQ in the live page HTML.
+
 ## 2026-10-23 — Creator token lock
 
 - Added a rectangular Creator token lock section after Tokenomics and before Buy & Burn, with a responsive mobile layout.
