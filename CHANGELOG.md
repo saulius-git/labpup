@@ -1,5 +1,11 @@
 # Development updates
 
+## 2026-10-28 — Creator token lock navigation
+
+- Added Creator token lock to the top navigation between Tokenomics and Buy & Burn, linking directly to the existing section.
+- Allowed navigation links to wrap on narrower desktop and tablet screens while keeping each label together.
+- Production build and TypeScript checks passed; checked the desktop layout and anchor navigation in preview. Cloudflare reported a successful production deployment.
+
 ## 2026-10-23 — Token lock FAQ
 
 - Added “What does locked mean?” to the public FAQ, explaining the 25,000,000 LABPUP creator lock, approximately 50% of holdings at creation, unlock date, disabled early cancellation and transfer, and full claim at expiry.
