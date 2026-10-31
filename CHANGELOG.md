@@ -1,5 +1,12 @@
 # Development updates
 
+## 2026-10-31 — Holder universe
+
+- Added proportional glowing 3D holder spheres after the market charts and before Tokenomics, with aligned address and balance columns and no drag or inspection controls.
+- Added server-side sampling of the largest 20 token accounts, owner grouping, creator and bonding-curve classification, and a separately verified Streamflow lock allocation and fee reserve.
+- Reuses the existing ten-minute refresh lease and private RPC configuration. D1 retains a dated snapshot and marks unsuccessful refreshes as stale. No demonstration balances are published.
+- Production build, TypeScript and 39 Node tests passed. The full local Wrangler integration runner was blocked by an environment network-interface error; managed visual preview was unavailable. Changes pushed to the production branch for Cloudflare deployment.
+
 ## 2026-10-28 — Creator token lock navigation
 
 - Added Creator token lock to the top navigation between Tokenomics and Buy & Burn, linking directly to the existing section.
